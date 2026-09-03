@@ -1,4 +1,7 @@
 """
+Exemplo de aula
+"""
+"""
 t = int(input("Digite um número para ver a tabuada: "))
 cont = 0
 
