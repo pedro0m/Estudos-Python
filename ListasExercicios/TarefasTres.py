@@ -119,13 +119,25 @@ Considere o preço fixo de R$ 4,00 para o litro do Álcool e R$ 5,50 para a Gaso
 um programa que leia a quantidade de litros e o tipo de combustível ('A' ou 'G') e informe o
 valor total a ser pago.
 """
-tipocombustivel = input('Vai colocar oque hoje chefe?: ')
-quantoslitros = int(input('Quantos litros?: '))
+"""
+tipo = input('Digite Combustivel: ').lower()
+litros = int(input('Digite quantos Litros: '))
 
-alcool = 4
-gasolina =  5.5
+if tipo == 'a':
+    preco = 4
+    desconto = 0.03 if litros <= 20 else 0.05
+elif tipo == 'g':
+    preco = 5.5
+    desconto = 0.04 if litros <= 20 else 0.06
+else:
+    preco = 0
+    desconto = 0
 
-if tipocombustivel == "a":
-    if quantoslitros <= 20:
-        desconto = quantoslitros * 0.03
-        print(f'Deu {desconto}')
+if preco > 0:
+    subtotal = litros * preco
+    total = subtotal - desconto
+    print(f'R${total:.2f}')
+
+else:
+    print('Tipo Inválido')
+"""
