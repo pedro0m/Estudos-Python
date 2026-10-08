@@ -32,9 +32,11 @@ print(f'Tem {vogais.count('a')} Ás ')
 '''
 
 '''Exercício 5 - Dada a lista animais = ["gato", "cachorro", "pássaro"],
- altere o valor de "pássaro" para "peixe" acessando seu índice diretamente.'''
+ altere o valor de "pássaro" para "peixe" acessando seu índice diretamente.
 
 animais = ["gato", "cachorro", "pássaro"]
 pos = animais.index('pássaro')
 animais[pos] = 'peixe'
 print(animais)
+'''
+
